@@ -8,14 +8,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-secondary);
 }
 
 .container {
     display: flex;
-    position: sticky;
     width: 1600px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .header {
@@ -27,6 +32,7 @@
 
 .header__menu {
     display: flex;
+    position: sticky;
     align-items: center;
 }
 
@@ -34,6 +40,7 @@
     display: flex;
     align-items: center;
     margin-left: 100px;
+    gap: 16px;
 }
 
 .header__menu-item {
@@ -43,4 +50,5 @@
 .header__menu-item a {
     text-decoration: none;
     color: var(--color-text);
+    text-transform: uppercase;
 }
